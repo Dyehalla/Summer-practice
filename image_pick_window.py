@@ -23,8 +23,8 @@ class ImageDialog(QDialog):
         self.image_path = None
         self.camera = None
 
+    """Выбор изображения через проводник"""
     def select_image(self):
-        """Выбор изображения через проводник"""
         file_path, _ = QFileDialog.getOpenFileName(
             self, "Выберите изображение", "",
             "Images (*.png *.jpg *.jpeg *.bmp *.gif)"
